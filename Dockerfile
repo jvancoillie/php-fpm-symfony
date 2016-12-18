@@ -26,4 +26,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony && \
 	chmod a+x /usr/local/bin/symfony
 
-RUN cd /var/www/html/ && symfony demo
+EXPOSE 9000
