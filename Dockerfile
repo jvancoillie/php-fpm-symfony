@@ -20,10 +20,11 @@ RUN docker-php-ext-install -j$(nproc) intl \
     && docker-php-ext-install -j$(nproc) mcrypt \
     && docker-php-ext-install -j$(nproc) opcache 
 
+# Enable and configure xdebug
+RUN pecl install xdebug \
+    && docker-php-ext-enable xdebug
+
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
 	php /usr/local/bin/composer self-update
-
-RUN curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony && \
-	chmod a+x /usr/local/bin/symfony
 
 EXPOSE 9000
