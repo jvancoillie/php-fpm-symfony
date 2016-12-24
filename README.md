@@ -5,7 +5,7 @@ This [Docker php-fpm](https://hub.docker.com/r/jvancoillie/php-fpm-symfony/) ima
 
 ## Run
 ```bash
-$ docker run -d --name php_fpm_symfony jvancoillie/php-fpm-symfony -v path/to/symfony/project::/var/www/html/symfony
+$ docker run -d --name php_fpm_symfony jvancoillie/php-fpm-symfony -v path/to/symfony/project:/var/www/html/symfony
 ```
 
 ## With docker-compose
