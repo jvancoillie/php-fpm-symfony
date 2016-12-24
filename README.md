@@ -1,4 +1,6 @@
 # php-fpm-symfony
+[![](https://images.microbadger.com/badges/image/jvancoillie/php-fpm-symfony.svg)](https://microbadger.com/images/jvancoillie/php-fpm-symfony "Get your own image badge on microbadger.com")
+
 This [Docker php-fpm](https://hub.docker.com/r/jvancoillie/php-fpm-symfony/) image based on [php:fpm](https://github.com/docker-library/php/blob/b66c0fa0286d0abbb8a36653e26e6992bb71b858/7.1/fpm/Dockerfile) includes a ready-to-use composer for symfony project development.
 
 ## Run
