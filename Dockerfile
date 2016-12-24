@@ -1,6 +1,14 @@
 FROM php:fpm
 MAINTAINER Jérémy Vancoillie <jeremy.vancoillie@gmail.com>
 
+ARG BUILD_DATE
+ARG VCS_REF
+
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.vcs-url="https://github.com/jvancoillie/nginx-symfony.git" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.schema-version="1.0.0"
+
 ENV SYMFONY_ENV=dev SYMFONY_DEBUG=1 
 
 ADD symfony.ini /usr/local/etc/php/conf.d/
