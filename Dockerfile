@@ -18,6 +18,8 @@ RUN apt-get update \
  libicu-dev \
  libcurl4-gnutls-dev \
  libmcrypt-dev \
+ bzip2 \
+ libbz2-dev \
  g++ \
  libxml2-dev \
  && apt-get clean \
