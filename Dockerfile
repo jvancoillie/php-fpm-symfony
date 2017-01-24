@@ -20,6 +20,7 @@ RUN apt-get update \
  libmcrypt-dev \
  bzip2 \
  libbz2-dev \
+ zlib1g-dev \
  g++ \
  libxml2-dev \
  && apt-get clean \
