@@ -25,6 +25,8 @@ RUN apt-get update \
 
 RUN docker-php-ext-install -j$(nproc) intl \
     && docker-php-ext-install -j$(nproc) curl \
+    && docker-php-ext-install -j$(nproc) bz2 \
+    && docker-php-ext-install -j$(nproc) zip \
     && docker-php-ext-install -j$(nproc) mcrypt \
     && docker-php-ext-install -j$(nproc) opcache 
 
