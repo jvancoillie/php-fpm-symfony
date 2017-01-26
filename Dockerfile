@@ -12,6 +12,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 ENV SYMFONY_ENV=dev SYMFONY_DEBUG=1 
 
 ADD symfony.ini /usr/local/etc/php/conf.d/
+ADD php.ini /usr/local/etc/php/
 
 RUN apt-get update \
  && apt-get install -y git \
