@@ -44,6 +44,8 @@ RUN pecl install xdebug \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
 	php /usr/local/bin/composer self-update
 
+RUN usermod -u 1000 www-data
+
 WORKDIR /var/www/html/symfony
 
 EXPOSE 9000
